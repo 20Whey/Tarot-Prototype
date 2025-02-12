@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 namespace essentials{
+
+    //just aspect and requirements
 public class Puzzle_Piece{
    public aspect required_aspect;
    public int required_amount;
@@ -11,7 +13,7 @@ public class Puzzle_Piece{
             this.required_amount = required_amount;
         }
 }
-
+//major is still an aspect ig
    public enum aspect
    {
     Blades,
@@ -21,6 +23,9 @@ public class Puzzle_Piece{
     Major
    }
 
+
+
+//simple version with no bells or whistles
 public abstract class Character
 {
     public string name { get;set;}

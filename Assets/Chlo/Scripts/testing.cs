@@ -5,8 +5,8 @@ using Unity.VisualScripting;
 using System.Linq;
 public class testing : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
 
+    //andy grabs the base character class from essentials
     class Andy : Character
     {
 
@@ -17,8 +17,8 @@ public class testing : MonoBehaviour
         Andy guy = new Andy();
         guy.roll_puzzle();
         for(int j = 0; j < guy.puzzle.Count; j++){
-        Debug.Log(guy.puzzle.ElementAt(j));
-    }
+        Debug.Log(guy.puzzle.ElementAt(j).required_aspect);
+        }
     }
 
 }
